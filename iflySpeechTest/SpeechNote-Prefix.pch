@@ -1,0 +1,41 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#endif
+
+#define OUT_BORDER_WIDTH 8
+#define TITLE_OFFSET_Y 20
+#define INIT_FONT_SIZE 30
+#define FONT_SIZE_DELT 0
+#define THUMB_IMAGE_RECT CGRectMake(0,0,96, 80)
+
+//本地存储key
+#define AUTO_FIT_PUNCTUATION @"autoFitPunctuaion"
+#define SPEEK_TIMEOUT @"speekTimeout"
+#define TEXT_ALIGNMENT @"textAlignment"
+#define TEXT_ALIGNMENT_INDEX @"textAlignmentIndex"
+#define TEXT_SIZE @"textSize"
+#define TEXT_SIZE_INDEX @"textSizeIndex"
+#define TEXT_COLOR @"textColor"
+#define TEXT_COLOR_INDEX @"textColorIndex"
+
+//通知
+#define UPDATE_NOTE_LIST_NOTIFY @"updateNoteListNotification"
+#define SAVE_TEMP_NOTE_NOTIFY @"saveTempNote"
+#define REFRESH_TEXT_VIEW_NOTIFY @"refreshTextView"
+#define REFRESH_TITLE_VIEW_NOTIFY @"refreshTitleView"
+#define CHANGE_CONTAINER_CENTER @"changeContainerCenter"
+
+
